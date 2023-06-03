@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<p>假设 y=5，计算 x=y+2，并显示结果。</p>
+<button onclick="myFunction()">点击这里</button>
+<p id="demo">123</p>
+
+<!-- <button onclick="Function()">点击</button>
+<p id="demo2">asd</p> -->
+  <script>
+    var x=5;
+    var y=6;
+    var z=x+y;
+    document.write(x+'<br>');
+    document.write(y + '<br>');
+    document.write(z + '<br>')
+
+    function myFunction() {
+      var y=5;
+      var x=y+2;
+      var demoP=document.getElementById("demo");
+      demoP.innerHTML="x=" + x;
+
+      // function Function() {
+      //   var carname="Volvo";
+      //   document.getElementById("demo2").innerHTML=carname;
+      // }
+    }
+  </script>
+</body>
+</html>

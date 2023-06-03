@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p> typeof 操作符返回变量或表达式的类型。</p>
+  <p id="demo"></p>
+
+
+  <script>
+    document.getElementById("demo").innerHTML = typeof "john" + "<br>"+
+    typeof 3.14 + "<br>" + typeof false + "<br>" + typeof [1,2,3,4] + "<br>" + typeof {name:"john,age:34"};
+
+    var carname1="Volvo XC60";
+    var carname2='Volvo XC60';
+    var carname3='It\'s alright';
+    var carname4="He is called\"Johnny\"";
+    var carname5='He is called "Johnny';
+
+    document.write(carname1 + '<br>');
+    document.write(carname2 + "<br>");
+    document.write(carname3 + "<br>");
+    document.write(carname4 + "<br>");
+    document.write(carname5 + "<br>")
+
+    var x1=34.00;
+    var x2=34;
+    var y=123e5;
+    var z=123e-5;
+
+    document.write(x1 + "<br>");
+    document.write(x2 + "<br>");
+    document.write(y + "<br>");
+    document.write(z + "<br>");
+
+    var person
+    var car="123";
+    document.write(person + "<br>");
+    document.write(car + "<br>");
+    var car=null;
+    document.write(car + "<br>")
+
+    var person= {
+      firstname:"John",
+      lastname:"Doe",
+      id:5566
+    };
+    document.write(person.lastname+"<br>");
+    document.write(person["lastname"]+"<br>")
+
+    var i;
+    var cars = new Array();
+    cars[0] = "Saab";
+    cars[1] = "Volvo";
+    cars[2] = "BMW";
+
+    for (let i = 0; i < cars.length; i++) {
+      document.write(cars[i] + "<br>")
+      
+    }
+  </script>
+</body>
+</html>
