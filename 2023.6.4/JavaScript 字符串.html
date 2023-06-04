@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+
+  <script>
+    var x = "John";
+    var y = new String("John");
+    document.getElementById("demo").innerHTML = x===y
+    document.getElementById("demo1").innerHTML =typeof x + " " +typeof y;
+
+    var txt = "Hellow World";
+    document.write("<p>" +txt.length + "</p>");
+    var txt="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    document.write("<p>"+txt.length+"</p>")
+
+    var x = 'It\`s alright';
+    var y = "He is called \"Johnny\"";
+    document.getElementById("demo2").innerHTML = x + "<br>" + y;
+
+    const name = "RUNOOB";
+    let letter = name[2];
+    document.getElementById("demo3").innerHTML = letter
+  </script>
+</body>
+</html>

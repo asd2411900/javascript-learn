@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="myFunction()">点击这里</button>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+  <p id="demo5"></p>
+  <p id="demo6"></p>
+
+  <script>
+    function myFunction(params) {
+      var x=5+5;
+      var y="5"+5;
+      var z="he"+5
+      var demoP=document.getElementById('demo');
+      demoP.innerHTML=x + "<br>" + y + "<br>" +z;
+
+      txt1 = "123";
+      txt2 = "456";
+      txt3 =txt1 + " " + txt2;
+      document.getElementById("demo1").innerHTML=txt3
+
+      txt3="What a very ";
+	    txt4="nice day";
+      text5=txt3+txt4;
+      document.getElementById("demo2").innerHTML=text5;
+
+      var x=10;
+      var y=5;
+      x %= y;
+      var demoO=document.getElementById("demo3")
+      demoO.innerHTML="x=" + x;
+
+      var x=10;
+      var y=5;
+      x /= y;
+      var demoI=document.getElementById("demo4")
+
+      var x=10;
+      var y=5;
+      // x*=y;
+      // x-=y;
+      // x+=y
+      x=y
+      var demoU=document.getElementById("demo5");
+      demoU.innerHTML = "x=" + x;
+
+      var y=5;
+          z=2
+      // var x=y--;
+      // var x=--y;
+      // var x=y++
+      // var x=++y
+      // var x=y%2
+      // var x=y/2
+      // var x=y*2
+      // var x=y-2
+      // var x=y+2
+      x=y+z
+      var demoY=document.getElementById("demo6");
+      demoY.innerHTML="x="+x+",y="+y
+    }
+  </script>
+</body>
+</html>
