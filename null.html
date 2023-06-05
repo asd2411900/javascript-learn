@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <p id="demoOne"></p>
+  <script>
+    var person = {
+      firstName:"John",
+      lastName:"Dos",
+      age:50,
+      eyeColor:"blue"
+    };
+    var person = null;
+    // 值为 null(空), 但类型为对象
+    document.getElementById("demo").innerHTML = typeof person;
+
+    document.getElementById("demo").innerHTML = typeof "john"+"<br>" + typeof 3.14 + "<br>" +
+	typeof false + "<br>" +
+	typeof [1,2,3,4] + "<br>" +
+	typeof {name:'john', age:34};
+  </script>
+</body>
+</html>
