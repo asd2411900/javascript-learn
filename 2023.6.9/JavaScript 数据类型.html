@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="myFunction()">点我</button>
+  <p id="demo"></p>
+
+  <script>
+    // document.getElementById("demo").innerHTML = typeof "john"+ "<br>" + typeof 3.14 + "<br>" + typeof NaN + "<br>" +typeof flase + "<br>"  + typeof + [1,2,3,4] + "<br>"+typeof {name:"john",age:34} + "<br>" + typeof new Date() + "<br>" + typeof function(){} + "<br>" + typeof myCar + "<br>" +typeof null;
+
+    function myFunction(params) {
+      // var y = "John";
+      // var x = +y;
+      // document.getElementById("demo").innerHTML = typeof x + "<br>" + x
+
+      // var y = "5";
+      // var x = +y;
+      // document.getElementById("demo").innerHTML = typeof y + "<br>" + typeof x + "<br>" + x
+
+      // var x=123;
+      // document.getElementById("demo").innerHTML = x.toString() + "<br>" + (123).toString() + "<br>" + (100+23).toString()
+
+      // var x=123;
+      // document.getElementById("demo").innerHTML = String(x) + "<br>" + String(123) + "<br>" + String(100+23)
+
+      // var myDate = new Date();
+      // document.getElementById("demo").innerHTML = isDate(myDate);
+      // function isDate(myDate) {
+      //   return myDate.constructor.toString().indexOf("Date") - 1;
+      // }
+
+      // document.getElementById("demo").innerHTML = "john".constructor + "<br>" +(3.14).constructor + "<br>" + false.constructor + "<br>" + [1,2,3,4].constructor + "<br>" + {name:"john",age:34}.constructor + "<br>" + function(){}.constructor
+
+   
+    }
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo").innerHTML = isArray(fruits)
+      function isArray(myArray) {
+        return myArray.constructor.toString().indexOf("Array") > -1;
+      }
+  </script>
+</body>
+</html>
