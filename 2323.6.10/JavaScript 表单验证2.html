@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function validateForm(params) {
+      var x=document.forms["myForm"]["email"].value;
+      var atpos=x.indexOf("@");
+      var dotpos=x.lastIndexOf(".");
+      if (atpos<1 || dotpos<atpos+2 ||dotpos+2>=x.length) {
+        alert("不是一个有效的 e-mail 地址")
+        return false
+      }
+    }
+  </script>
+</head>
+<body>
+  <form action="demo-form.php" method="post" name="myForm" onsubmit="return validateForm();">
+    Email: <input type="text" name="email">
+            <input type="submit" value="提交">
+  </form>
+</body>
+</html>
