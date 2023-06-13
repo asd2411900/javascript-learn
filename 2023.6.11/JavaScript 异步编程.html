@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 简单来理解就是：同步按你的代码顺序执行，异步不按照代码顺序执行，异步的执行效率更高。 -->
+
+  <!-- 但是子线程有一个局限：一旦发射了以后就会与主线程失去同步，我们无法确定它的结束，如果结束之后需要处理一些事情，比如处理来自服务器的信息，我们是无法将它合并到主线程中去的。? -->
+
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+
+  <script>
+    // function print(params) {
+    //   document.getElementById("demo").innerHTML = "RUNOOB!"
+    // }
+    // setTimeout(print,3000);
+
+      // setTimeout(function(params) {
+      //   document.getElementById("demo").innerHTML="RUNOOB!";
+      // },3000)
+    
+    setTimeout(function(params) {
+      document.getElementById("demo1").innerHTML="RUNOOB-1!"; 
+    },3000);
+    document.getElementById("demo2").innerHTML="RUNOOB-2!"
+  </script>
+</body>
+</html>

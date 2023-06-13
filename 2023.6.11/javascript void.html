@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function getValue(params) {
+      var a,b,c
+      a = void (b=5,c=7);
+      document.write('a=' + a + 'b=' + b + 'c=' + c)
+    }
+  </script>
+</head>
+<body>
+  <!-- void 是 JavaScript 中非常重要的关键字，该操作符指定要计算一个表达式但是不返回值。 -->
+
+  <!-- <a href="javascript:void(0)">单击此处什么也不会发生</a> -->
+
+  <!-- <a href="javascript:void(alert('Warning!!!'))">123</a> -->
+
+  <form action="">
+    <input type="button" value="点我" onclick="getValue()">
+  </form>
+</body>
+</html>

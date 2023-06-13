@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <script>
+    // function myFuction(x,y) {
+    //   if (y === undefined) {
+    //     // y = 0
+    //     y = y || 0;
+    //   }
+    //   return x * y;
+    // }
+    // document.getElementById("demo").innerHTML = myFuction(4);
+
+    // function myFuction(x,y = 10) {
+    //      // 如果不传入参数 y ，则其默认值为 10
+    //   return x + y;
+    // }
+    // document.getElementById("demo1").innerHTML = myFuction(0,2);
+    // document.getElementById("demo2").innerHTML = myFuction(5);
+
+    // x = findMax(1,123,500,115,44,88);
+    // function findMax(params) {
+    //   var i,max = arguments[0];
+
+    //   if (arguments.length < 2) {
+    //     return max
+    //   }
+
+    //   for (let i = 0; i < arguments.length; i++) {
+    //     // const element = array[i];
+    //     if (arguments[i] > max) {
+    //       max = arguments[i]
+    //     }
+    //   }
+    //   return max
+    // }
+    // document.getElementById("demo").innerHTML = x;
+
+    function sumAll() {
+      var i,sum = 0;
+      for ( i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+        
+      }
+      return sum;
+    }
+
+    document.getElementById("demo").innerHTML =
+	sumAll(1, 123, 500, 115, 44, 88);
+  </script>
+</body>
+</html>

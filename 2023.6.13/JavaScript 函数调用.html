@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+
+  <script>
+    // function myFuction(a,b) {
+    //   return a * b;
+    // }
+    // document.getElementById("demo").innerHTML = myFuction(10,2)
+
+    // document.getElementById("demo").innerHTML = window.myFuction(10,2);
+
+    // function myFuction() {
+    //   return this;
+    // }
+    // document.getElementById("demo").innerHTML = myFuction();
+
+    // var myObject = {
+    //   firstName:"John",
+    //   lastName: "Doe",
+    //   fullName:function() {
+    //     // return this.firstName + " " + this.lastName
+    //     return this
+    //   }
+    // }
+    // document.getElementById("demo").innerHTML = myObject.fullName();
+
+    // function myFuction(arg1,arg2) {
+    //   this.firstName = arg1;
+    //   this.lastName =arg2;
+    // }
+    // var x = new myFuction("John","Doe")
+    // document.getElementById("demo").innerHTML = x.firstName;
+
+    // var myObject;
+    // function myFuction(a,b) {
+    //   return a * b;
+    // }
+    // myObject = myFuction.call(myObject,10,2);
+    // document.getElementById("demo").innerHTML =myObject;
+
+    var myObject,myArray;
+    function myFuction(a,b) {
+      return a * b;
+    };
+    myArray = [10,2];
+    myObject = myFuction.apply(myObject,myArray);
+    document.getElementById("demo").innerHTML = myObject;
+  </script>
+</body>
+</html>

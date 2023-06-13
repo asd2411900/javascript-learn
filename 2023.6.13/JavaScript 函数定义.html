@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+
+  <script>
+    // function myFuction(a,b) {
+    //   return a*b
+    // }
+    // document.getElementById("demo").innerHTML=myFuction(4,3)
+
+    // var x = function(a,b) {return a*b};
+    // document.getElementById("demo").innerHTML = x
+
+    // 以上函数实际上是一个 匿名函数 (函数没有名称)。
+    // var x = function(a,b) {return a * b};
+    // document.getElementById("demo").innerHTML = x(4,3);
+
+    // Function() 构造函数
+    // var myFuction = new Function("a","b","return a * b");
+    // document.getElementById("demo").innerHTML = myFuction(4,3);
+
+    // var myFuction = function (a,b) {return a * b};
+    // document.getElementById("demo").innerHTML = myFuction(4,3);
+
+    // 匿名自我调用的函数
+    // (function(){
+    //   document.getElementById("demo").innerHTML = "Hello! 我是自己调用的";
+    // })();
+
+    // 值
+    // function myFuction(a,b) {
+    //   return a * b;
+    // }
+    // var x = myFuction(4,3);
+    // var x = myFuction(4,3) * 2;
+    // document.getElementById("demo").innerHTML = x;
+
+    // arguments.length 属性返回函数接收到参数的个数：
+    // function myFuction(a,b) {
+    //   return arguments.length;
+    // }
+    // document.getElementById("demo").innerHTML = myFuction(4,3)
+
+    // function myFuction(a,b) {
+    //   return a * b
+    // }
+    // document.getElementById("demo").innerHTML = myFuction.toString();
+
+    // JavaScript 箭头函数
+    // const x = (x,y) => x*y;
+    // document.getElementById("demo").innerHTML = x(5,5);
+
+    const x = (x,y) => {return x * y};
+    document.getElementById("demo").innerHTML = x(5,5);
+  </script>
+</body>
+</html>
