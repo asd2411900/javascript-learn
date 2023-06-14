@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <p id="demo"></p> -->
+  <p id="demo"></p>
+  <p id="demo2"></p>
+  <script>
+    // class Site {
+    //   constructor(name) {
+    //     this.sitename = name;
+    //   }
+    //   present() {
+    //     return "我喜欢" + this.sitename;
+    //   }
+    // }
+
+    // class Runoob extends Site {
+    //   constructor(name,age) {
+    //     super(name);
+    //     this.age =age;
+    //   }
+    //   show() {
+    //     return this.present() + ",他创建了" + this.age + "年";
+    //   }
+    // }
+
+    // let noob = new Runoob("菜鸟",5);
+    // document.getElementById("demo").innerHTML = noob.show();
+
+
+    // class Polygon {
+    //   constructor(height,width) {
+    //     this.name = "Rectangle";
+    //     this.height = height;
+    //     this.width = width;
+    //   }
+    //   sayName() {
+    //     return "HI,I am a" + this.name + ",";
+    //   }
+    //   get area() {
+    //     return this.height * this.width;
+    //   }
+    //   set area(value) {
+    //     this._area = value;
+    //   }
+    // }
+    // class Square extends Polygon {
+    //   constructor(length) {
+    //     super(length,length);
+    //     this.height;
+    //     this.name = "Square";
+
+    //   }
+    // }
+    // let s = new Square(5);
+    // document.getElementById("demo").innerHTML = s.sayName();
+    // document.getElementById("demo2").innerHTML = s.area;
+
+    class Rectangle {
+      constructor() {}
+      static logNbSides() {
+        return "I have 4 sides"
+      }
+    }
+    class Square extends Rectangle {
+      constructor() {}
+      static logDescription() {
+        return super.logNbSides() + " which are all equal";
+      }
+    }
+    document.getElementById("demo").innerHTML = Square.logDescription();
+  </script>
+</body>
+</html>

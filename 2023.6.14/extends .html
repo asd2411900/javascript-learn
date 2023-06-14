@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+
+  <script>
+    class Site {
+      constructor(name) {
+        this.Sitename =name;
+      }
+      present() {
+        return "我喜欢" + this.sitname;
+      }
+    }
+
+    class Runoob extends Site {
+      constructor(name,age) {
+        // super(name) 调用了 Site 类的构造函数，并将 name 参数传递给它。这样就可以在 Runoob 类中使用 Site 类中定义的属性和方法了。
+        super(name);
+        this.age = age;
+      }
+      show() {
+        return this.present() + "创建了" + this.age + "年";
+      }
+    }
+
+    let noob = new Runoob("菜鸟",5);
+    document.getElementById("demo").innerHTML = noob.show();
+  </script>
+</body>
+</html>

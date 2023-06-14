@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+
+  <script>
+    // class Runoob {
+    //   constructor(name,url) {
+    //     this.name = name;
+    //     this.url = url
+    //   }
+    // }
+    // let site = new Runoob("菜鸟教程","https://www.runoob.com");
+    // document.getElementById("demo").innerHTML = site.name + ":" + site.url
+
+    // class Runoob {
+    //   constructor(name,year) {
+    //     this.name = name;
+    //     this.year = year;
+    //   }
+    //   age() {
+    //     let date = new Date();
+    //     return date.getFullYear() - this.year;
+    //   }
+    // }
+    // let runoob =new Runoob("菜鸟",2018);
+    // document.getElementById("demo").innerHTML = "菜鸟教程" + runoob.age() + "岁了"
+
+    // class Runoob {
+    //   constructor(name,year) {
+    //     this.name = name;
+    //     this.year = year;
+    //   }
+    //   age(x) {
+    //     return x - this.year;
+    //   }
+    // }
+    // let date =new Date();
+    // let year = date.getFullYear();
+    // let runoob = new Runoob("菜鸟教程", 2020);
+    // document.getElementById("demo").innerHTML = "菜鸟" + runoob.age(year) + "岁了"
+
+    class Runoob {
+      constructor(name,year) {
+        this.name = name;
+        this.year =year;
+      }
+      age() {
+        date = new Date();
+        // 类声明和类表达式的主体都执行在严格模式下
+        // let date = new Date();
+        return date.getFullYear() - this.year;
+      }
+    }
+    myCar = new Runoob("菜鸟",2020);
+    document.getElementById("demo").innerHTML = "菜鸟" + myCar.age() + "岁";
+  </script>
+</body>
+</html>
