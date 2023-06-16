@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+
+  <script>
+    // class Site {
+    //   constructor(name) {
+    //     this.sitename = name;
+    //   }
+    //   present() {
+    //     return "我喜欢" + this.sitename;
+    //   }
+    // }
+    // class Runoob extends Site {
+    //   constructor(name,age) {
+    //     super(name);
+    //     this.age = age;
+    //   }
+    //   show() {
+    //     return this.present() + ", 它创建了" + this.age + "年";
+    //   }
+    // }
+    // let noob = new Runoob("菜鸟",5);
+    // document.getElementById("demo").innerHTML = noob.show();
+
+    // class Runoob {
+    //   constructor(name) {
+    //     this.sitename = name;
+    //   }
+    //   get s_name() {
+    //     return this.sitename;
+    //   }
+    //   set s_name(x) {
+    //     this.sitename = x;
+    //   }
+    // }
+    // let noob = new Runoob("菜鸟");
+    // document.getElementById("demo").innerHTML = noob.s_name;
+
+    // class Runoob {
+    //   constructor(name) {
+    //     this._sitename = name;
+    //   }
+    //   get sitename() {
+    //     return this._sitename;
+    //   }
+    //   set sitename(x) {
+    //     this._sitename = x;
+    //   }
+    // }
+    // let noob = new Runoob("菜鸟");
+    // document.getElementById("demo").innerHTML = noob.sitename;
+
+    class Runoob {
+      constructor(name) {
+        this._sitename = name;
+      }
+      set sitename(x) {
+        this._sitename = x;
+      }
+      get sitename() {
+        return this._sitename;
+      }
+    } 
+    let noob = new Runoob("菜鸟教程");
+    noob.sitename = "RUNOOB";
+    document.getElementById("demo").innerHTML = noob.sitename;
+
+    // 函数声明和类声明之间的一个重要区别在于, 函数声明会提升，类声明不会。
+  </script>
+</body>
+</html>
