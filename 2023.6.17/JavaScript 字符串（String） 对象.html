@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <p id="p1">Click the button to locate where "locate" first occurs.</p>
+  <p id="p2">0</p>
+  <button onclick="myFunction()">点我</button> -->
+
+  <!-- <p>替换 "Microsoft" 为 "Runoob" :</p>
+  <button onclick="myFunction()">点我</button>
+  <p id="demo">请访问 Microsoft!</p> -->
+
+  <p id="demo">单击按钮显示数组。</p>
+  <button onclick="myFunction()">点我</button>  
+  <script>
+    // var carname1 = "Volvo XC60";
+    // var carname2 = "Volvo XC60";
+    // var answer1 = "It\'s alright";
+    // var answer2 = "He is called \"Johnny\"";
+    // var answer3 = 'He is called "Johnny"';
+    // document.write(carname1 + "<br>");
+    // document.write(carname2 + "<br>");
+    // document.write(answer1 + "<br>");
+    // document.write(answer2 + "<br>");
+    // document.write(answer3 + "<br>");
+
+    // var txt = "Hello World!";
+    // document.write("<p>" + txt.length + "</p>");
+    // var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    // document.write("<p>" + txt.length + "</p>");
+
+    // function myFunction() {
+    //   var str = document.getElementById("p1").innerHTML;
+    //   var n = str.indexOf("locate");
+    //   document.getElementById("p2").innerHTML = n + 1;
+    // }
+
+    // var str="Hello world!";
+    // document.write(str.match("world") + "<br>");
+    // document.write(str.match("World") + "<br>");
+    // document.write(str.match("world"));
+
+    // function myFunction() {
+    //   var str = document.getElementById("demo").innerHTML;
+    //   var txt = str.replace("Microsoft","Runoob");
+    //   document.getElementById("demo").innerHTML = txt;
+    // }
+
+    // var txt="Hello World!";
+    // document.write("<p>" + txt.toUpperCase() + "</p>");
+    // document.write("<P>" + txt.toLowerCase() + "</p>");
+    // document.write("<p>" + txt + "</p>");
+
+    function myFunction(params) {
+      var str = "a,b,c,d,e,f";
+      // 我们可以使用 split() 方法将其分割成一个数组：
+      var n = str.split(",");
+      document.getElementById("demo").innerHTML = n[0];
+    }
+  </script>
+</body>
+</html>

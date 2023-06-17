@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+
+  <script>
+    // function Person(first,last,age,eye) {
+    //   this.firstName = first;
+    //   this.lastName = last;
+    //   this.age = age;
+    //   this.eyeColor = eye;
+    // }
+    // var myFather = new Person("John", "Doe", 50, "blue");
+    // var myMother = new Person("Sally", "Rally", 48, "green");
+    // document.getElementById("demo").innerHTML = "我的父亲年龄是 " + myFather.age + "。我的母亲年龄是 " + myMother.age
+
+    // Person.nationality = "English";
+    // var myFather = new Person("John", "Doe", 50, "blue");
+    // var myMother = new Person("Sally", "Rally", 48, "green");
+    // document.getElementById("demo").innerHTML = "我父亲的国籍是 " + myFather.nationality;
+
+    // function Person(first,last,age,eye) {
+    //   this.firstName = first;
+    //   this.lastName = last;
+    //   this.age = age;
+    //   this.eyeColor = eye;
+    //   this.nationlity = "English";
+    // }
+    // var myFather = new Person("John", "Doe", 50, "blue");
+    // var myMother = new Person("Sally", "Rally", 48, "green");
+    // document.getElementById("demo").innerHTML = "我父亲的国籍是 " + myFather.nationlity + "。我母亲的国籍是 " + myMother.nationlity
+
+    //     function Person(first,last,age,eye) {
+    //   this.firstName = first;
+    //   this.lastName = last;
+    //   this.age = age;
+    //   this.eyeColor = eye;
+    // }
+    // Person.prototype.nationality = "English";
+    // var myFather = new Person("John", "Doe", 50, "blue");
+    // document.getElementById("demo").innerHTML = "我父亲的国籍是 " + myFather.nationality; 
+
+    function Person(first,last,age,eye) {
+      this.firstName = first;
+      this.lastName = last;
+      this.age = age;
+      this.eyeColor = eye;
+    }
+    Person.prototype.name = function() {
+      return this.firstName + " " + this.lastName
+    }
+    var myFather = new Person("John","Doe",50,"blue");
+    document.getElementById("demo").innerHTML = "我的父亲是 " + myFather.name();
+  </script>
+</body>
+</html>
