@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 它表示浏览器窗口。 -->
+  <!-- 所有 JavaScript 全局对象、函数以及变量均自动成为 window 对象的成员。
+  全局变量是 window 对象的属性。
+  全局函数是 window 对象的方法。 -->
+  <p id="demo"></p>
+
+  <script>
+    var w = window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;
+    var h = window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;
+    x = document.getElementById("demo");
+    x.innerHTML = "浏览器window宽度: " + w + ", 高度: " + h + "。"
+  </script>
+</body>
+</html>
