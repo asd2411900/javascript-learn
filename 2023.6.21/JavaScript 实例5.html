@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <button onclick="myFunction('Harry Potter','Wizard')">点击这里</button> -->
+
+  <button onclick="myFunction()">点我</button>
+  <p id="demo"></p>
+  <script>
+    // function myFunction(name,job) {
+    //   alert("Welcome" + name +",the" + job)
+    // }
+
+    // function myFunction(a,b) {
+    //   return a*b;
+    // }
+    // document.getElementById("demo").innerHTML = myFunction(4,3);
+
+    // function myFunction(params) {
+    //   alert("Hello\nHow are you?")
+    // }
+
+    // function myFunction(params) {
+    //   var x;
+    //   var r=confirm("按下按钮!");
+    //   if (r==true) {
+    //     x = "按下了\"确定\"按钮！";
+    //   } else {
+    //     x = "按下\"取消\"按钮！"
+    //   }
+    //   document.getElementById("demo").innerHTML = x
+    // }
+
+    // function myFunction(params) {
+    //   var x;
+    //   var person = prompt("请输入你的名字","123");
+    //   if (person!=null && person!=" ") {
+    //     x = "你好" + person + "!今天感觉如何?";
+    //     document.getElementById("demo").innerHTML = x
+    //   }
+    // }
+
+    // function myFunction() {
+    //   var x = " ";
+    //   var time=new Date().getHours();
+    //   if(time<20) {
+    //     x = "Good day";
+    //   } else {
+    //     x = "Good evening";
+    //   }
+    //   document.getElementById("demo").innerHTML=x;
+    // }
+
+    // var r = Math.random();
+    // var x = document.getElementById("demo");
+    // if (r>0.5) {
+    //   x.innerHTML="<a href='http://www.runoob.com'>访问菜鸟教程</a>";
+    // } else {
+    //   x.innerHTML="<a href='http://wwf.org'>Visit WWF</a>";
+    // }
+
+    // function myFunction(params) {
+    //   var x;
+    //   var d = new Date().getDay();
+    //   switch (d) {
+    //       case 0:x='0';
+    //       break;
+    //       case 1:x='1';
+    //       break;
+    //       case 2:x='2';
+    //       break;
+    //       case 3:x="今天是星期三";
+    //       break;
+    //       case 4:x='4';
+    //       break;
+    //       case 5:x='5';
+    //       break;
+    //       case 6:x='6';
+    //       break;
+    //   }
+    //   document.getElementById("demo").innerHTML=x;
+    // }
+
+    onerror=handleErr;
+    var txt = "";
+    function handleErr(msg,url,l) {
+      txt = "该页面有一个错误\n\n";
+      txt += "错误：" +msg + "\n";
+      txt += "URL:" + url + "\n";
+      txt += "行：" + l + "\n\n";
+      txt += "点击确定继续。\n\n";
+      alert(txt);
+      return true;
+    }
+
+    function message(params) {
+      adddlert("Welcome guest!");
+    }
+  </script>
+
+<input type="button" value="查看消息" onclick="message()" />
+</body>
+</html>

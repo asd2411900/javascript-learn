@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // var str = "Visit RUnoob";
+    // var pattl = /runoob/i;
+    // document.write(str.match(pattl));
+
+    // var str="Is this all there is?";
+    // // var pattl = /is/g;
+    // var pattl = /is/gi;
+    // document.write(str.match(pattl));
+
+    // var pattl = new RegExp("e");
+    // document.write(pattl.test("The best things in life are free"));
+
+    var str = 'runoob';
+    var patt1 = new RegExp('\\w','g');
+    var patt2 = new RegExp('\w','g');
+    var patt3 = /\w+/g;
+    document.write(patt1.test(str));
+    document.write("<br>");
+    document.write(patt2.test(str));
+    document.write("<br>");
+    document.write(patt3.test(str));
+
+    // var patt1 = new RegExp("e");
+    // document.write(patt1.exec("The best things in life are free"));
+  </script>
+</body>
+</html>

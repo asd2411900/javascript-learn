@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // var txt="";
+    // function message() {
+    //   try {
+    //     adddlert("Welcome guest!")
+    //   } catch(err) {
+    //     txt = "本页有一个错误。\n\n";
+    //     txt += "错误描述：" + err.message + "\n\n";
+    //     txt += "确认继续。\n\n"
+    //     alert(txt) 
+    //   }
+    // }
+
+    var txt="";
+    function message(params) {
+      try {
+        adddlert("Welcome guest!");
+      }
+      catch(err) {
+        txt="本页有一个错误。\n\n";
+        txt+="单击确定继续跳转\n";	
+        txt+="或者单击取消返回\n\n";
+        if(confirm(txt)) {
+          document.location.href = "http://www.runoob.com/";
+        }
+      }
+    }
+  </script>
+<input type="button" value="查看消息" onclick="message()" />
+</body>
+</html>
