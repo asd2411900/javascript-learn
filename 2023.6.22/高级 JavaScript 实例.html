@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // function timeText(params) {
+    //   var x = document.getElementById('txt');
+    //   var t1 = setTimeout(function(){
+    //     x.value = "2"
+    //   },2000);
+    //   var t2 = setTimeout(function(){x.value="4"},4000);
+    //   var t3 = setTimeout(function() {x.value="6" },6000)
+    // }
+
+    // var c=0;
+    // var t;
+    // var timer_is_on=0;
+    // function timedCount() {
+    //   document.getElementById('txt').value = c;
+    //   c = c+1;
+    //   t = setTimeout("timedCount()",1000)
+    // }
+    // function doTimer(){
+    //   if(!timer_is_on) {
+    //     timer_is_on=1;
+    //     timedCount();
+    //   }
+    // }
+    // function stopCount() {
+    //   clearTimeout(t);
+    //   timer_is_on=0;
+    // }
+
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML = h + ":" + m  + ":" + s;
+      t = setTimeout(function(){startTime()},500);
+    }
+    function checkTime(i) {
+      if(i<10) {
+        i = "0" + i
+      }
+      return i;
+    }
+  </script>
+</head>
+<body onload="startTime()">
+  <!-- <button onclick="myFunction()">点我</button>
+
+  <input type="button" value="时间" onclick="timeText()">
+  <input type="text" id="txt"> -->
+
+  <!-- <form>
+  <input type="button" value="开始计数!" onClick="doTimer()">
+  <input type="text" id="txt">
+  <input type="button" value="停止计数!" onclick="stopCount()" />
+  </form> -->
+
+  <div id="txt"></div>
+  <script>
+    // function person(firstname,lastname,age,eyecolor) {
+    //   this.firstname=firstname;
+    //   this.lastname=lastname;
+    //   this.age=age;
+    //   this.eyecolor=eyecolor;
+    // }
+    // myFather = new person("John","Doe",50,"blue");
+    // document.write(myFather.firstname+"is"+myFather.age+"years.old");
+
+    // function setCookie(cname,cvalue,exdays) {
+    //   var d = new Date();
+    //   d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    // }
+
+    // person = {firstname:"John",lastname:"Doe",age:50,eyecolor:"blue"}
+    // document.write(person.firstname + " is " + person.age + " years old.")
+
+//     function myFunction(){
+// 	setTimeout(function(){alert("Hello")},3000);
+// }
+  </script>
+</body>
+</html>
