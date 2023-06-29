@@ -7,10 +7,10 @@
 </head>
 <body>
   <script>
-    console.log('hi');
+console.log('hi');
 const getUserChoice = function getUserChoice(userInput) {
   userInput = userInput.toLowerCase();
-  if(userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
+  if(userInput === 'rock' || userInput === 'paper' || userInput === 'scissors'  || userInput === 'bomb') {
     return userInput;
   } else {
     console.log('Error!')
@@ -18,7 +18,8 @@ const getUserChoice = function getUserChoice(userInput) {
 };
 console.log(getUserChoice('Paper'));
 console.log(getUserChoice('fork'));
-let randomNumber = Math.floor(Math.random() * 3);
+function getComputerChoice() {
+  let randomNumber = Math.floor(Math.random() * 3);
 switch(randomNumber) {
   case 0:
   return 'rock';
@@ -30,11 +31,53 @@ switch(randomNumber) {
   return 'scissors';
   break;
 }
+return randomNumber
+}
 function determineWinner() {
   if(userChoice === computerChoice) {
     return 'The game is a tie!';
   }
 }
+
+function determineWinner(userChoice,computerChoice) {
+  if(userChoice === 'bomb') {
+return 'The user won!'
+  }
+if(userChoice === 'rock') {
+  if(computerChoice === 'paper') {
+return 'The computer won!'
+  } else {
+return 'You won!'
+  }
+}
+
+if(userChoice === 'paper') {
+  if(computerChoice === 'scissors') {
+return 'The computer won!'
+  } else {
+return 'You won!'
+  }
+}
+
+if(userChoice === 'scissors') {
+  if(computerChoice === 'rock') {
+return 'The computer won!'
+  } else {
+return 'You won!'
+  }
+}
+}
+
+console.log(determineWinner('paper', 'scissors'))
+
+function palyGame() {
+  let userChoice = getUserChoice('scissors');
+  let computerChoice = getComputerChoice();
+  console.log('You threw: '+ userChoice);
+  console.log('The computer threw:' + computerChoice);
+  console.log(determineWinner(userChoice,computerChoice))
+};
+palyGame()
   </script>
 </body>
 </html>
