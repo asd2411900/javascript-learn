@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Write your code below
+const vacationSpots = ['a','b','c'];
+console.log(vacationSpots[0]);
+console.log(vacationSpots[1]);
+console.log(vacationSpots[2]);
+
+for(let i = 5; i <= 10; i++) {
+  console.log(i);
+}
+
+const vacationSpots1 = ['Bali', 'Paris', 'Tulum'];
+
+// Write your code below
+for (let i = 0; i < vacationSpots1.length; i++ ){
+  console.log('I would love to visit ' + vacationSpots1[i]);
+}
+
+// Write your code below
+let bobsFollowers = ['Bob','Cob','Dob','Eob'];
+let tinasFollowers = ['Aob','Cob','Bob'];
+let mutualFollowers = [];
+for (let i=0;i< bobsFollowers.length;i++){
+  for (let j=0;j < tinasFollowers.length;j++){
+if (bobsFollowers[i] === tinasFollowers[j]) {
+      mutualFollowers.push(bobsFollowers[i]);
+    }
+  }
+};
+
+const cards = ['diamond', 'spade', 'heart', 'club'];
+let currentCard;
+// Write your code below
+while(currentCard !== 'spade') {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard)
+}
+
+// Write your code below
+let cupsOfSugarNeeded = 1;
+let cupsAdded = 0;
+do {
+cupsAdded++
+console.log(cupsAdded + ' cup was added')
+} while(cupsAdded < cupsOfSugarNeeded) 
+
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+// Write your code below
+for (let i = 0; i < rapperArray.length; i++) {
+  console.log(rapperArray[i]);
+ if (rapperArray[i] === "Notorious B.I.G.") {
+   break
+ }
+};
+ console.log("And if you don't know, now you know.");
+
+  </script>
+</body>
+</html>

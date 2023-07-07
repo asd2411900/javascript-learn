@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let input = 'turpentine and turtles';
+let vowels = ['a','e','i','o','u'];
+let resultArray = [];
+let resultString = [];
+for (let i = 0;i < input.length;i++){
+// console.log('i is' + i)
+for (let j = 0;j < vowels.length;j++) {
+// console.log('j is '+ j);
+if(input[i] === vowels[j]) {
+  // console.log(input[i])
+  resultArray.push(input[i])
+  if(input[i] === 'e') {
+  // console.log(input[i])
+  resultArray.push(input[i])
+};
+if(input[i] === 'u') {
+  // console.log(input[i])
+  resultArray.push(input[i])
+ 
+};
+
+}
+
+// if(input[i] === 'e') {
+//   // console.log(input[i])
+//   resultArray.push(input[i])
+
+// }
+
+
+// if(input[i] === 'u') {
+//   // console.log(input[i])
+//   resultArray.push(input[i])
+ 
+// }
+}
+}
+resultString = resultArray ;
+resultArray = resultArray.join('')
+resultArray = resultArray.toUpperCase();
+resultString = resultArray + ' ,' + resultString
+ console.log(resultArray);
+  console.log(resultString);
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
+  for(let i = 1; i <= 1000000; i++) {
+    if ( (2 + 2) != 4) {
+      console.log('Something has gone very wrong :( ');
+    }
+  }
+};
+// Write your code below
+const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
+isTwoPlusTwo();
+console.log(isTwoPlusTwo.name)
+
+
+const addTwo = num => {
+  return num + 2;
+}
+const checkConsistentOutput = (func, val) => {
+let checkA = val + 2;
+let checkB = func(val);
+if(checkA == checkB) {
+  return func(val)
+}else {
+  return 'inconsistent results'
+}
+}
+console.log(checkConsistentOutput(addTwo,10));
+
+// 函数可以作为参数传递给其他函数。
+// 高阶函数是接受函数作为参数、返回函数或两者兼而有之的函数。
+  </script>
+</body>
+</html>
