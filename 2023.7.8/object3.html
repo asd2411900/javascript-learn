@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth',
+  color: 'silver',
+  'Secret Mission' : 'Discover life outside of Earth.'
+};
+spaceship.color = 'glorious gold';
+// Write your code below
+spaceship.numEngines = 8;
+delete spaceship['Secret Mission'];
+
+let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+// Write your code below
+let alienShip = {
+  retreat(){
+  console.log(retreatMessage)
+  },
+  takeOff(){
+    console.log('Spim... Borp... Glix... Blastoff!')
+  }
+}
+;
+alienShip.retreat()
+alienShip.takeOff()
+  </script>
+</body>
+</html>
