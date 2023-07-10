@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+      function startTime(){
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML = h + ":" + m + ":" +s;
+      t = setTimeout(function(){startTime()},500);
+      function checkTime(i) {
+        if(i<10) {
+          i = "0" + i;
+        }
+        return i;
+      }
+    }
+  </script>
+</head>
+<body  onload="startTime()">
+  <p id="demo">单击按钮显示1970年1月1号至今的毫秒数。</p>
+  <button onclick="myFunction()">点我</button>
+
+
+  <div id="txt"></div>
+  <script>
+    // var d = new Date();
+    // document.write(d)
+
+    // function myFunction() {
+    //   var d = new Date();
+    //   var x = document.getElementById("demo");
+    //   x.innerHTML = d.getTime()
+    // }
+
+    // function myFunction(params) {
+    //   var d = new Date();
+    //   d.setFullYear(2020,10,3);
+    //   var x = document.getElementById("demo");
+    //   x.innerHTML = d;
+    // }
+
+    // function myFunction() {
+    //   var d = new Date();
+      // var x = document.getElementById("demo");
+      // x.innerHTML = d.toUTCString();
+
+      // var d = new Date();
+      // var weekday = new Array(7);
+      // weekday[0] = "周日";
+      // weekday[1] = "周1";
+      // weekday[2] = "周2";
+      // weekday[3] = "周3";
+      // weekday[4] = "周4";
+      // weekday[5] = "周5";
+      // weekday[6] = "周6";
+      // var x = document.getElementById("demo");
+      // x.innerHTML = weekday[d.getDay()]
+    // }
+
+  
+  </script>
+</body>
+</html>
