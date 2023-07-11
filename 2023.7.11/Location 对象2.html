@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function newDoc(){
+      window.location.assign("https://www.runoob.com")
+    }
+
+    function reloadPage() {
+      location.reload()
+    }
+
+    function replaceDoc() {
+      window.location.replace("https://www.runoob.com")
+    }
+
+    function breakout(){
+	if (window.top!=window.self) {
+		window.top.location="tryjs_breakout.html";
+	}
+}
+  </script>
+</head>
+<body>
+  <input type="button" value="载入新文档" onclick="newDoc()">
+  <br>
+  <input type="button" value="重新加载页面" onclick="reloadPage()">
+  <br>
+  <input type="button" value="载入新文档替换当前页面" onclick="replaceDoc()">
+  <br>
+  <input type="button" onclick="breakout()" value="跳出框架!">
+</body>
+</html>

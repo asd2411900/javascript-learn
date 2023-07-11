@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // function printpage() {
+    //   window.print();
+    // }
+  </script>
+</head>
+<body>
+  <!-- <input type="button" value="打印此页面" onclick="printpage()" /> -->
+
+<h1>Window 对象</h1>
+<h2>resizeBy() 方法</h2>
+<p>打开新的窗口并重置窗口大小。</p>
+<button onclick="openWin()">创建浏览器窗口</button>
+<button onclick="resizeWin()">重置浏览器窗口大小</button>
+
+<script>
+  let myWindow;
+  function openWin() {
+    myWindow = window.open("","","width = 100,height = 100");
+  }
+
+  function resizeWin() {
+    myWindow.resizeBy(250,250);
+  }
+</script>
+</body>
+</html>

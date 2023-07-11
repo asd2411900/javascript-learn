@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // var myWindow;
+    // function open_win() {
+      // window.open("https://www.runoob.com")
+
+      // window.open("https://www.runoob.com","toolbar=yes,location=yes,directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=400, height=400")
+
+      // window.open("https://c.runoob.com/");
+      // window.open("http://www.runoob.com/");
+
+      // myWindow = window.open('',',','width=200,height=100');
+      // myWindow.document.write("<p>这是'我的窗口'</p>");
+      // myWindow.focus()
+
+      // myWindow = window.open("",'MsgWindow','windth=200,height=100');
+      // myWindow.document.write("<p>窗口名称为: " + myWindow.name + "</p>");
+
+      // myWindow = window.open('','','width=200,height = 100');
+      // myWindow.document.write("<p>这是我的窗口</p>");
+      // myWindow.focus();
+      // myWindow.opener.document.write("<p>这个是源窗口!</p>")
+
+    //   myWindow = window.open('','','width=200,height=100');
+    //   myWindow.document.write("<p>这是我的窗口</p>")
+    // }
+
+    // function closeWin() {
+    //   myWindow.close()
+    // }
+
+    // function moveWin() {
+    //   // myWindow.moveBy(250,250);
+
+    //   myWindow.moveTo(0,0);
+    //   myWindow.focus();
+    // }
+
+    var w;
+    function openWindow() {
+      w=window.open('','', 'width=100,height=100');
+      w.focus();
+    }
+
+    function myFunction(){
+      w.resizeTo(500,500);
+      w.focus();
+    }
+  </script>
+</head>
+<body>
+  <!-- <form>
+    <input type="button" value="打开窗口" onclick="open_win()">
+    <br>
+    <input type="button" value="关闭我的窗口" onclick="closeWin()" />
+    <br>
+    <input type="button" value="移动我的窗口" onclick="moveWin()" />
+    </form> -->
+
+    <button onclick="openWindow()">创建窗口</button>
+    <button onclick="myFunction()">调整窗口</button>
+</body>
+</html>

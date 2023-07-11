@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+  function goBack(){
+    window.history.back()
+  }
+  function goForward() {
+    window.history.forward()
+  }
+  function  goBackTow() {
+    window.history.go(-2)
+  }
+  </script>
+</head>
+<body>
+  <input type="button" value="返回" onclick="goBack()">
+  <br>
+  <input type="button" value="前进" onclick="goForward()">
+  <br>
+  <input type="button" value="后退2页" onclick="goBackTow()">
+  <script>
+    document.write("历史列表中URL的数量： " + history.length)
+  </script>
+</body>
+</html>

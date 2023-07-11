@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function convert(degree) {
+      if(degree == "C"){
+        F = document.getElementById("c").value * 9 / 5 +32;
+        document.getElementById("f").value = Math.round(F);
+      }else {
+        C=(document.getElementById("f").value - 32) * 5 / 9;
+        document.getElementById("c").value = Math.round(C);
+      }
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <input id="c" name="c" onkeyup="convert('C')"> 摄氏度<br>
+    等于<br> 
+    <input id="f" name="f" onkeyup="convert('F')"> 华氏度 
+    </form>
+</body>
+</html>
