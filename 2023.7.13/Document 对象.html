@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <a name="html">HTML 教程</a><br>
+  <a name="css">CSS 教程</a><br>
+  <a name="xml">XML 教程</a><br>
+  <a href="/js/">JavaScript 教程</a> -->
+
+  <!-- <form name="Form1"></form>
+  <form name="Form2"></form> -->
+  <!-- <form></form> -->
+
+  <!-- <img border="0" src="klematis.jpg" width="150" height="113">
+  <img border="0" src="klematis2.jpg" width="152" height="128"> -->
+  
+
+  <!-- <img src ="planets.gif" width="145" height="126" alt="Planets" usemap ="#planetmap">
+  <map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+  <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+  <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+  <p><a href="/js/">JavaScript 教程</a></p> -->
+
+  <!-- <img src ="planets.gif" width="145" height="126" alt="Planets" usemap ="#planetmap">
+<map name="planetmap">
+<area id="sun" shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+<area id="mercury" shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+<area id="venus" shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+</map>
+<p><a id="javascript" href="/js/">JavaScript 教程</a></p> -->
+
+<!-- <input type="button" value="新文档" onclick="createDoc()"> -->
+
+<!-- <h1 id="myHeader" onclick="getValue()">点击我!</h1>
+ -->
+
+ <!-- 猫:
+<input name="x" type="radio" value="猫">
+狗:
+<input name="x" type="radio" value="狗">
+<input type="button" onclick="getElements()" value="多少名称为 'x'的元素?"> -->
+
+<input type="text" size="20"><br>
+<input type="text" size="20"><br>
+<input type="text" size="100"><br><br>
+<input type="button" onclick="getElements()" value="多少input元素?">
+  <script>
+    // document.write("Hello World!");
+
+    // document.write("<h1>Hello World!</h1>");
+
+    // document.write(document.anchors.length);
+
+    // document.write(document.anchors[0].innerHTML);
+
+    // document.write(document.forms.length);
+
+    // document.write(document.forms[0].name);
+
+    // document.write(document.images.length);
+
+    // document.write(document.images[0].id);
+
+    // document.write(document.links.length)
+
+    // document.write(document.links[0].id);
+
+    // document.write(document.cookie);
+
+    // 加载这个文件的域名:
+    // document.write(document.domain);
+
+    // document.write(document.lastModified);
+
+    // document.write(document.referrer);
+
+    // document.write(document.title);
+
+    // document.write(document.URL);
+
+    // function createDoc() {
+    //   var doc = document.open("text/html","replace");
+    //   var txt = "<!DOCTYPE html><html><body>学习 HTML DOM 很有趣!</body></html>";
+    //   doc.write(txt);
+    //   doc.close();
+    // }
+
+    // document.write("Hello World!");
+    // document.write("Have a nice day!");
+    
+    // function getValue() {
+    //   var x = document.getElementById("myHeader");
+    //   alert(x.innerHTML);
+    // }
+
+    // function getElements() {
+    //   var x = document.getElementsByName("x");
+    //   alert(x.length);
+    // }
+
+    function getElements() {
+      var x = document.getElementsByTagName("input");
+      alert(x.length)
+    }
+  </script>
+
+  <!-- <script>
+     document.writeln("Hello World!");
+    document.writeln("Have a nice day!");
+  </script> -->
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a id="runoob" charset="ISO-8859-1" href="//www.runoob.com/" hreflang="zh-cn">菜鸟教程</a><br>
+  <script>
+    // document.write("返回链接的charset: ");
+    // document.write(document.getElementById('runoob').charset);
+
+    document.write("返回链接的hreflang: ");
+    document.write(document.getElementById('runoob').hreflang);
+    document.write("<br><br>");
+  </script>
+  <a id="google" href="//www.google.com/">Google</a><br>
+  <script>
+    // document.getElementById("google").charset = "utf-8";
+    // document.write("设置链接的charset: ");
+    // document.write(document.getElementById("google").charset);
+
+    document.getElementById('google').hreflang="no";
+    document.write("设置链接的hreflang: ");
+    document.write(document.getElementById('google').hreflang);
+    
+  </script>
+
+  <!-- <p><a id="runoob" href="http://www.runoob.com/">菜鸟教程</a></p>
+  <script>
+    document.write("返回 href 链接: ")
+    document.write(document.getElementById('runoob').href)
+  </script> -->
+</body>
+</html>
