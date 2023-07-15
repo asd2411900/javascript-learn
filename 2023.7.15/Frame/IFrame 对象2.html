@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+function changeStyle(){
+	var x=document.getElementById("myframe");
+	var y=(x.contentWindow || x.contentDocument);
+	if (y.document)y=y.document;
+	y.body.style.backgroundColor="#0000ff";
+}
+  </script>
+</head>
+<body>
+  <iframe src="https://www.runoob.com" frameborder="0" id="myframe"></iframe>
+  <br><br>
+  <input type="button" onclick="changeStyle()" value="修改背景颜色">
+</body>
+</html>

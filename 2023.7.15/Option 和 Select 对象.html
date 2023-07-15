@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // function disable() {
+    //   document.getElementById("mySelect").disabled = true;
+    // }
+    // function enable() {
+    //   document.getElementById("mySelect").disabled = false;
+    // }
+
+    function getLength() {
+      // alert(document.getElementById("mySelect").length);
+
+      let x = document.getElementById("mySelect")
+      x.size = 4
+
+      // x.multiple = true;
+
+      // x.remove(x.selectedIndex);
+
+      // x.options[x.selectedIndex].text = "甜瓜";
+
+      // alert(x.selectedIndex);
+
+      let txt = "选中的选项是: ";
+      for (let i = 0; i < x.length; i++) {
+        if(x.options[i].selected) {
+          txt = txt + "\n" + x.options[i].text;
+        }
+        
+      }
+      alert(txt)
+    }
+  </script>
+</head>
+<body>
+  <form action="" id="myForm">
+    <select name="" id="mySelect">
+      <option value="">苹果</option>
+      <option value="">梨子</option>
+      <option value="">香蕉</option>
+      <option value="">橙子</option>
+    </select>
+    <!-- <input type="button" onclick="disable()" value="禁用列表">
+    <input type="button" onclick="enable()" value="启用列表"> -->
+
+    <input type="button" onclick="getLength()" value="列表有几种选择?">
+  </form>
+
+  <script>
+    // document.write(document.getElementById("mySelect").form.id)
+
+
+  </script>
+</body>
+</html>

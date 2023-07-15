@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function insRow() {
+  //     var  x = document.getElementById('myTable').inserRow(0);
+  //     var y=x.insertCell(0);
+	// var z=x.insertCell(1);
+  //     y.innerHTML="新单元格1";
+	//     z.innerHTML="新单元格2";
+
+  var x=document.getElementById('tr').insertCell(0);
+	x.innerHTML="The famous";
+    }
+  </script>
+</head>
+<body>
+  <table id="myTable" border="1">
+    <tr >
+      <td>行1 列1</td>
+      <td>行1 列2</td>
+    </tr>
+    <tr id="tr">
+      <td>行2 列1</td>
+      <td>行2列2</td>
+    </tr>
+    <tr>
+      <td>行3 列1</td>
+      <td>行3 列2</td>
+    </tr>
+    </table>
+    <br>
+
+
+<!-- 
+    <table border="1">
+      <tr id="tr">
+        <td>Peter</td>
+        <td>Griffin</td>
+      </tr>
+      </table>
+      <br> -->
+    <input type="button" onclick="insRow()" value="插入行">
+</body>
+</html>

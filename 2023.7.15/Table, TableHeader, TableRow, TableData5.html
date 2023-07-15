@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function alignCell() {
+      document.getElementById('td1').align="right";
+	    document.getElementById('td2').align="right";
+    }
+  </script>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <th>第一个名称</th>
+      <th>下一个名称</th>
+    </tr>
+    <tr>
+      <td id="td1">Peter</td>
+      <td id="td2">Griffin</td>
+    </tr>
+  </table>
+  <br>
+  <input type="button" onclick="alignCell()" value="右对齐单元格" />
+</body>
+</html>

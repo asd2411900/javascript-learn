@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function isKeyPressed(event) {
+      if(event.shiftKey == 1) {
+        alert(" shift 键被按下!")
+      } else {
+        alert("shift 未按下")
+      }
+    }
+  </script>
+</head>
+<body onmousedown="isKeyPressed(event)">
+  <p>点击该段落，弹窗会提示是否按下 shift 键。</p>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // function changeBorder() {
+      // document.getElementById('myTable').border = "10";
+     
+
+    // }
+
+    
+    function padding() {
+      let x = document.getElementById('myTable')
+      // x.cellPadding = "15";
+
+      x.frame = "above"
+    }
+
+    function spacing() {
+      let x = document.getElementById('myTable')
+      // x.cellSpacing = "15";
+
+      x.frame = "below"
+    }
+
+    function showRow() {
+      let x = document.getElementById('myTable')
+      // alert(x.rows[0].innerHTML) 
+
+      // alert(x.rows[0].cells[0].innerHTML);
+
+      x.createCaption().innerHTML = "表的标题";
+      
+    }
+
+    function deleteRow(r) {
+      let i = r.parentNode.parentNode.rowIndex;
+      document.getElementById('myTable').deleteRow(i)
+    }
+  </script>
+</head>
+<body>
+  <!-- <table border="1" id="myTable">
+    <tr>
+      <td>100</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>300</td>
+      <td>400</td>
+    </tr>
+    </table>
+    <br> -->
+
+    <!-- <table id="myTable">
+      <tr>
+        <td>100</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>300</td>
+        <td>400</td>
+      </tr>
+      </table>
+      <br> -->
+
+    <!-- <input type="button" onclick="changeBorder()" value="修改边框"> -->
+
+    <table id="myTable" border="1">
+      <tr>
+        <td>行 1</td>
+        <td><input type="button" value="删除" onclick="deleteRow(this)"></td>
+      </tr>
+      <tr>
+        <td>行 2</td>
+        <td><input type="button" value="删除" onclick="deleteRow(this)"></td>
+      </tr>
+      <tr>
+        <td>行 3</td>
+        <td><input type="button" value="删除" onclick="deleteRow(this)"></td>
+      </tr>
+      </table>
+
+    <input type="button" onclick="padding()" value="修改单元格边距">
+    <br>
+    <input type="button" onclick="spacing()" value="修改单元格间距">
+    <br>
+    <input type="button" onclick="showRow()" value="显示第一行的HTML文本">
+</body>
+</html>

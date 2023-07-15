@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function valignCell() {
+      var x = document.getElementById('myTable').rows[0].cells;
+      // x[0].vAlign="bottom";
+
+      x[0].innerHTML = "新内容";
+    }
+  </script>
+</head>
+<body>
+  <table id="myTable" border="1" >
+    <tr>
+      <td height="50px">第一个单元格</td>
+      <td>第二个单元格</td>
+    </tr>
+    <tr>
+      <td height="50px">第三个单元格</td>
+      <td>第四个单元格</td>
+    </tr>
+  </table>
+  <form>
+  <input type="button" onclick="valignCell()" value="第一个单元格内容底部对齐">
+  </form>
+</body>
+</html>

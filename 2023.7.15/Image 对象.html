@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function alignImg() {
+      // document.getElementById("compman").align="right";
+
+      // document.getElementById("compman").border = "2";
+
+      // document.getElementById("compman").height = "250";
+      // document.getElementById("compman").width = "300";
+
+      // document.getElementById("compman").hspace = "50";
+      // document.getElementById("compman").vspace = "50";
+
+      document.getElementById("compman").src = "https://www.runoob.com/try/demo_source/hackanm.gif"
+
+    }
+
+   
+  </script>
+</head>
+<body>
+  <img id="compman" src="https://www.runoob.com/try/demo_source/compman.gif" alt="Computerman" width="107" height="98" alt="Crazy computerman" longdesc="description.htm" lowsrc="https://www.runoob.com/try/demo_source/compman_lowres.gif" name="compman">
+<p>一些文本。一些文本。一些文本。一些文本。一些文本。</p>
+<input type="button" onclick="alignImg()" value="图像对齐">
+
+
+<script>
+  // document.write(document.getElementById("compman").alt);
+
+  // document.write(document.getElementById("compman").longDesc);
+
+  var x=document.getElementById("compman");
+  // document.write('<a href = ' + x.lowsrc + '>低分辫</a>') 
+
+  document.write(x.name)
+
+</script>
+</body>
+</html>
