@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮升序排列数组。</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    function myFunction() {
+      // var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      // fruits.sort();
+      // var x = document.getElementById("demo");
+      // x.innerHTML = fruits;
+
+      // var points = [40,100,1,5,25,10];
+      // // points.sort(function(a,b){return a-b});
+      // points.sort(function(a,b){return b-a});
+      // var x = document.getElementById("demo");
+      // x.innerHTML = points;
+
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits.sort();
+      fruits.reverse();
+      var x =document.getElementById("demo");
+      x.innerHTML = fruits;
+    }
+  </script>
+</body>
+</html>

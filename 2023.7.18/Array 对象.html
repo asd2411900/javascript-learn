@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">点击按钮创建一个数组，并显示它的构造函数.=。</p>
+<button onclick="myFunction()">点我</button>
+
+<script>
+
+  // Array.prototype.myUcase = function(){
+  //   for(i=0;i<this.length;i++){
+  //     this[i]=this[i].toUpperCase();
+  //   }
+  // };
+
+  // function myFunction() {
+  //   var fruits = ["Banana", "Orange", "Apple", "Mango"];
+  //   var x = document.getElementById("demo");
+  //   // x.innerHTML = fruits.constructor
+
+  //   // x.innerHTML = fruits.length
+
+  //   fruits.myUcase();
+  //   x.innerHTML =fruits;
+  // }
+
+  // var a = ["Google", "Taobao"];
+  // var b = ["Runoob", "Wiki", "Zhihu"];
+  // var c = a.concat(b);
+  // document.write(c);
+
+  // const array1 = ['a', 'b', 'c'];
+  // const array2 = ['d', 'e', 'f'];
+  // const array3 = ['g', 'h', 'i'];
+  // const array4 = array1.concat(array2,array3);
+  // document.write(array4);
+
+  // var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+  var fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];
+  document.getElementById("demo").innerHTML = fruits;
+  function myFunction() {
+    // document.getElementById("demo").innerHTML=fruits.copyWithin(2,0);
+    
+    document.getElementById("demo").innerHTML=fruits.copyWithin(2,0,2);
+  }
+</script>
+</body>
+</html>

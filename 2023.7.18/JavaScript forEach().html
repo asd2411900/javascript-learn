@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <button onclick="numbers.forEach(myFunction)">xxx</button>
+  <p id="demo"></p> -->
+
+
+  <input type="number" id="multiplyWith" value="10"></p>
+    <button onclick="numbers.forEach(myFunction)">*10</button>
+  <p>计算后的值: <span id="demo"></span></p>
+  <script>
+    // demoP = document.getElementById("demo");
+    // var numbers =  [4, 9, 16, 25];
+    // function myFunction(item,index) {
+    //   demoP.innerHTML = demoP.innerHTML +  '[' + index +']' + item +"<br>"
+    // }
+
+    // var sum = 0;
+    // var numbers = [65, 44, 12, 4];
+    // function myFunction(item) {
+    //   sum += item;
+    //   demo.innerHTML = sum;
+    // }
+
+    var numbers = [65, 44, 12, 4];
+    function myFunction(item,index,arr) {
+      arr[index] = item * document.getElementById("multiplyWith").value;
+      demo.innerHTML = numbers;
+    }
+  </script>
+</body>
+</html>

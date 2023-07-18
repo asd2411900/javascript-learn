@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮显示“苹果”最后一次出现的位置：</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    // var fruits = ["香蕉","橙子","苹果","甜瓜"];
+    // var a = fruits.lastIndexOf("苹果");
+
+    // var fruits=["Banana","Orange","Apple","Mango","Banana","Orange","Apple","Mango"];
+
+    var fruits=["香蕉","橙子","苹果","甜瓜","香蕉","橙子","苹果","甜瓜"];
+    var a = fruits.lastIndexOf("苹果",4);
+    
+    // var a = fruits.lastIndexOf("Apple");
+    var x = document.getElementById("demo");
+    x.innerHTML = a;
+  </script>
+</body>
+</html>
