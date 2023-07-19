@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <p id="demo">点击按钮截取数组下标 1 到 2 的元素。</p>
+  <button onclick="myFunction()">点我</button> -->
+
+  <p id="demo">点击按钮截取第三个和第四个元素，使用负数。</p>
+  <p id="demo2">这里显示截取最后三个元素，使用负数。</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    // function myFunction() {
+    //   var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    //   var citrus = fruits.slice(1,3);
+    //   var x = document.getElementById("demo");
+    //   x.innerHTML=citrus;
+    // }
+
+    // var str="www.runoob.com!";
+    // document.write(str.slice(4)+"<br>");
+    // document.write(str.slice(4,10));
+
+    function myFunction() {
+      var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+      var myBest = fruits.slice(-3,-1);
+      var myBest2 = fruits.slice(-3);
+      var x = document.getElementById("demo");
+      x.innerHTML = myBest;
+      var x2 = document.getElementById("demo2");
+      x2.innerHTML =myBest2;
+    }
+  </script>
+</body>
+</html>

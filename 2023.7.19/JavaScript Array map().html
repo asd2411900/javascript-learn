@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- <body>
+  <p>点击按钮获取数组元素的平方根。</p>
+<button onclick="myFunction()">点我</button>
+<p id="demo"></p>
+
+<script>
+  var numbers = [4, 9, 16, 25];
+  function myFunction() {
+    x = document.getElementById("demo");
+    x.innerHTML = numbers.map(Math.sqrt);
+  }
+</script> -->
+
+<p>最小年龄: <input type="number" id="multiplyWith" value="10"></p>
+<button onclick="myFunction()">点我</button>
+<p>新数组: <span id="demo"></span></p>
+
+<script>
+  var numbers = [65, 44, 12, 4];
+  function  multiplyArrayElement(num) {
+    return num * document.getElementById("multiplyWith").value;
+  }
+  function myFunction() {
+    document.getElementById("demo").innerHTML = numbers.map(multiplyArrayElement);
+  }
+</script>
+</body>
+</html>
