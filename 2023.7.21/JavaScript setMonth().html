@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮显示修改月份后的日期</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    function myFunction() {
+      var d = new Date();
+      // d.setMonth(4);
+      
+      // d.setMonth(4,20);
+
+      d.setMonth(d.getMonth(),0);
+      var x = document.getElementById("demo");
+      x.innerHTML = d;
+    }
+  </script>
+</body>
+</html>

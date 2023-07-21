@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮按照UTC显示月份：</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    function myFunction() {
+      // var d = new Date();
+      // var x = document.getElementById("demo");
+      // x.innerHTML = d.getUTCMonth();
+
+      var d = new Date();
+      var month = new Array(12);
+      month[0]="一月";
+      month[1]="二月";
+      month[2]="三月";
+      month[3]="四月";
+      month[4]="五月";
+      month[5]="六月";
+      month[6]="七月";
+      month[7]="八月";
+      month[8]="九月";
+      month[9]="十月";
+      month[10]="十一月";
+      month[11]="十二月";
+      var x = document.getElementById("demo");
+      x.innerHTML = month[d.getUTCMonth()];
+    }
+  </script>
+</body>
+</html>

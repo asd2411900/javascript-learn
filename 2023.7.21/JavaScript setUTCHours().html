@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮显示改变小时后的一个日期。</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    function myFunction() {
+      // var d = new Date();
+      // d.setUTCHours(15);
+      // var x = document.getElementById("demo");
+      // x.innerHTML = d
+
+      // var d = new Date();
+      // d.setUTCHours(15,35,1);
+      // var x = document.getElementById("demo");
+      // x.innerHTML = d
+
+      var d = new Date();
+      d.setUTCHours(d.getUTCHours() - 48);
+      var x = document.getElementById("demo");
+      x.innerHTML = d
+    }
+  </script>
+</body>
+</html>

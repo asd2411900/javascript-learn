@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮显示此时的小时字段：</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    function addZero(i) {
+      if(i < 10) {
+        i = "0" + i;
+      }
+      return i;
+    }
+
+    function myFunction() {
+      // var d = new Date();
+      // var x = document.getElementById("demo");
+      // x.innerHTML = d.getHours();
+
+      // var d = new Date("July 21, 1983 01:15:00");
+      // var x = document.getElementById("demo");
+      // x.innerHTML = d.getHours();
+
+      var d = new Date();
+      var x = document.getElementById("demo");
+      var h = addZero(d.getHours());
+      var m = addZero(d.getMinutes());
+      var s = addZero(d.getSeconds());
+      x.innerHTML = h + ":" + m + ":" + s
+    }
+  </script>
+</body>
+</html>

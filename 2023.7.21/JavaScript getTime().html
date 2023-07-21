@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮显示1970年1月1号至今的毫秒数。</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    function myFunction() {
+      // var d =new Date();
+      // var x = document.getElementById("demo");
+      // x.innerHTML = d.getTime();
+
+      var minutes = 1000 * 60;
+      var hours = minutes * 60;
+      var days = hours *24;
+      var years = days *365;
+      var d = new Date();
+      var t = d.getTime();
+      var y = Math.round(t/years);
+      var x = document.getElementById("demo");
+      x.innerHTML = y;
+    }
+  </script>
+</body>
+</html>

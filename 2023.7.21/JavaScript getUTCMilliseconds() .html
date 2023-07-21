@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮按照UTC显示毫秒数：</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    function myFunction() {
+      // var d = new Date();
+
+      var d = new Date("July 21, 1983 01:15:00:195");
+      var x = document.getElementById("demo");
+      x.innerHTML = d.getUTCMilliseconds();
+    }
+  </script>
+</body>
+</html>

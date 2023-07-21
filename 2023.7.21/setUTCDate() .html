@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮后显示日期改变的那一天。</p>
+<button onclick="myFunction()">点我</button>
+
+<script>
+
+  function myFunction() {
+    // var d =new Date();
+    // d.setUTCDate(15);
+    // var x = document.getElementById("demo");
+    // x.innerHTML = d;
+
+    // var d = new Date();
+    // d.setUTCDate(0);
+    // var x = document.getElementById("demo");
+    // x.innerHTML = d;
+
+    var d = new Date("July 21, 1983 01:15:00");
+    d.setUTCDate(15);
+    var x = document.getElementById("demo");
+    x.innerHTML = d;
+  }
+</script>
+</body>
+</html>

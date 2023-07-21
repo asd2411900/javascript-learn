@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<p id="demo">单击按钮以显示指定日期与,1970年1月1日午夜之间的毫秒数</p>
+<button onclick="myFunction()">点我</button>
+
+<script>
+  function myFunction() {
+  //   var d = Date.UTC(2012,02,30);
+  //  var x = document.getElementById("demo");
+  //  x.innerHTML= d
+
+  var d = new Date(Date.UTC(2012,02,30));
+  var x = document.getElementById("demo");
+  x.innerHTML = d
+  }
+</script>
+</body>
+</html>
