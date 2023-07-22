@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>	
+
+  <script>
+    // let num1 = 1000000;
+    // let text1 = num1.toLocaleString();
+    // document.getElementById("demo1").innerHTML = text1;
+
+    // let num2 = 1000000;
+    // let text2 = num2.toLocaleString("fi-Fi");
+    // document.getElementById("demo2").innerHTML = text2;
+
+    // let num3 = 1000000;
+    // let text3 = num3.toLocaleString("zh-CN",{style:"currency",currency:"CNY"});
+    // document.getElementById("demo3").innerHTML = text3;
+
+    // let num4 = 10000000;
+    // let text4 = num4.toLocaleString("en-US",{style:"currency",currency:"USD"});
+    // document.getElementById("demo4").innerHTML = text4;
+
+
+    let num1 = new Number(1000000);
+const myObj = {
+  style: "currency",
+  currency: "EUR"
+}
+let text1 = num1.toLocaleString("en-GB", myObj);
+
+document.getElementById("demo1").innerHTML = text1;
+
+    let num2 = new Number(1000000);
+    // let text2 = num2.toLoacleString("en-GB",{style:"currency",currency:"EUR"});
+    let text2 = num2.toLocaleString("en-GB", {style:"currency", currency:"EUR"});
+    document.getElementById("demo2").innerHTML = text2;
+
+    let num3 = 100000;
+    let text3 = num3.toLocaleString("zh-CN",{style:"currency",currency:"CNY"});
+    document.getElementById("demo3").innerHTML = text3;
+
+    let num4 = 100000;
+    let text4 = num4.toLocaleString("ja-JP",{style:"currency",currency:"JPY"});
+    
+    document.getElementById("demo4").innerHTML = text4;
+  </script>
+</body>
+</html>

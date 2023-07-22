@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    var txt = "Hello World!";
+    // document.write(txt.constructor)
+
+    // document.write(txt.length);
+
+    function employee(name,jobtitle,born) {
+      this.name = name ;
+      this.jobtitle = jobtitle;
+      this.born = born;
+    }
+
+    let fred = new employee("Fred Flintstone","Caveman",1970);
+    employee.prototype.salary = null;
+    fred.salary = 2000;
+    document.write(fred.salary);
+  </script>
+</body>
+</html>

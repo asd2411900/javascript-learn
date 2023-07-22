@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮来调用新的myMet()方法,并显示55一半数量值,使用新的构造函数myProp（）。</p>
+<button onclick="myFunction()">点我</button>
+
+<script>
+  Number.prototype.myMet = function() {
+    this.myProp = this.valueOf() / 2;
+  }
+
+  function myFunction() {
+    let d = new Number(55);
+    d.myMet();
+    let x = document.getElementById("demo");
+    x.innerHTML = d.myProp;
+  }
+</script>
+</body>
+</html>

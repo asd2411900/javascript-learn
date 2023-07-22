@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮显示保留小数的数值</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    function myFunction() {
+      let num = 5.56789;
+      let x = document.getElementById("demo");
+      // x.innerHTML = num.toFixed(2);
+
+      // x.innerHTML = num.toFixed();
+
+      x.innerHTML = num.toFixed(10);
+    }
+  </script>
+</body>
+</html>

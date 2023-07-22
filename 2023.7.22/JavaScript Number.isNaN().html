@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+<p>其他判断：</p>
+<p id="demo2"></p>
+
+
+<script>
+  // let result = Number.isNaN(123) + "<br>" + Number.isNaN(-1.23) + "<br>" + Number.isNaN('123') + "<br>" + Number.isNaN(0 / 0);
+  // document.getElementById("demo").innerHTML = result;
+
+  // let result2 = Number.isNaN(5-2) + "<br>" + Number.isNaN(0) + "<br>" + Number.isNaN("Hello") + "<br>" + Number.isNaN('2005/12/12')  + "<br>" + Number.isNaN('');
+  // document.getElementById("demo2").innerHTML = result2;
+
+  let result = Number.isNaN(true) + "<br>" + Number.isNaN(false) + "<br>" + Number.isNaN(undefined) + "<br>" + Number.isNaN("NaN")+"<br>" + Number.isNaN(NaN);
+  document.getElementById("demo").innerHTML = result;
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <p id="demo2"></p>
+
+  <script>
+    // let result = Number.isSafeInteger(123) + "<br>" + Number.isSafeInteger(-123) + "<br>" + Number.isSafeInteger('123');
+    // document.getElementById("demo").innerHTML = result;
+
+    // let result2 = Number.isSafeInteger(5-2) + "<br>" + Number.isSafeInteger(0) + "<br>" + Number.isSafeInteger(0.5) + "<br>" + Number.isSafeInteger(0 / 0);
+    // document.getElementById("demo2").innerHTML = result2;
+
+    let result = Number.isSafeInteger(Math.pow(2,53)) + "<br>" + Number.isSafeInteger(Math.pow(2,53)- 1);
+    document.getElementById("demo").innerHTML = result;
+
+    let result2 = Number.isSafeInteger(true) + "<br>" + Number.isSafeInteger(false) + "<br>" + Number.isSafeInteger(Infinity) + "<br>" + Number.isSafeInteger(-Infinity);
+    document.getElementById("demo2").innerHTML = result2;
+  </script>
+</body>
+</html>

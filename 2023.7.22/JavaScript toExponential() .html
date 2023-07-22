@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮以显示指定数值的指数表示法。</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    function myFunction() {
+      var num = 5.56789;
+      var x = document.getElementById("demo");
+      // x.innerHTML=num.toExponential();
+
+      x.innerHTML = num.toExponential(3)
+    }
+  </script>
+</body>
+</html>

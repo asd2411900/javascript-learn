@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮来显示格式化的数字</p>
+<button onclick="myFunction()">点我</button>
+
+<script>
+  function myFunction() {
+    let num = 15;
+
+    let a = num.toString();
+    let b = num.toString(2);
+    let c = num.toString(8);
+    let d = num.toString(16);
+    let x = document.getElementById("demo");
+    var n=a + "<br>" + b + "<br>" + c + "<br>" + d;
+    // x.innerHTML = num.toString()
+
+    x.innerHTML = n
+  }
+</script>
+</body>
+</html>

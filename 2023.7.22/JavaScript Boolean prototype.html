@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮以字符串的形式显示Boolean对象的值。</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    Boolean.prototype.myColor = function() {
+      if(this.valueOf() == true) {
+        this.color = "green"
+      } else {
+        this.color = "red";
+      }
+    }
+    function myFunction() {
+      // let myvar = new Boolean(1);
+      // var x = document.getElementById("demo");
+      // x.innerHTML = myvar.toString();
+
+      // let bool = new Boolean(0);
+      // let x = document.getElementById("demo");
+      // x.innerHTML = bool.valueOf();
+
+      // let myvar = new Boolean(1);
+      // let x= document.getElementById("demo");
+      // x.innerHTML = myvar.constructor;
+
+      var a = new Boolean(1);
+      a.myColor();
+      var x = document.getElementById("demo");
+      x.innerHTML = a.color
+    }
+  </script>
+</body>
+</html>
