@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮将不同的对象值转换为数字。</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    function myFunction() {
+      var test1 = Boolean(true);
+      var test2 = new Boolean(false);
+      let test3 = new Date();
+      let test4 = new String("999");
+      let test5 = new String("999 888");
+      let n = Number(test1) + "<br>" + Number(test2) + "<br>"  + Number(test3) + "<br>" + Number(test4) + "<br>" + Number(test5) + "<br>" ;
+      document.getElementById("demo").innerHTML=n;
+    }
+  </script>
+</body>
+</html>

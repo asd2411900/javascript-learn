@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮显示截取部分</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+
+    function myFunction() {
+      let str = "Hello world!"; 
+      // var n = str.slice(1,5);
+
+      // let n = str.slice(0);
+
+      // let n = str.slice(3);
+
+      // let n = str.slice(3,8);
+
+      // let n = str.slice(0,1);
+
+      let n = str.slice(-1)
+
+      document.getElementById("demo").innerHTML = n
+    }
+  </script>
+</body>
+</html>

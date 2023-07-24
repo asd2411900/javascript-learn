@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">Visit Microsoft!Visit Microsoft!Visit Microsoft!</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    String.prototype.replaceAll = function(search,replacement){
+      let target = this;
+      return target.replace(new RegExp(search,'g'),replacement);
+    };
+
+    function myFunction() {
+      let str = document.getElementById("demo").innerHTML;
+      let n = str.replaceAll("Microsoft","Runoob");
+      document.getElementById("demo").innerHTML = n;
+    }
+  </script>
+</body>
+</html>

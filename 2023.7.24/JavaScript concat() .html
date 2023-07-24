@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮连接两个字符串成新的字符串。</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    function myFunction() {
+      let txt1 = "Hello ";
+      let txt2 = "world!";
+      // let n = txt1.concat(txt2);
+
+      var txt3=" Have a nice day!";
+      let n = txt1.concat(txt2,txt3)
+      document.getElementById("demo").innerHTML = n;
+    }
+  </script>
+</body>
+</html>

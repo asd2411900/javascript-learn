@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // var uri="my test.php?name=ståle&car=saab";
+    // document.write(encodeURI(uri)+ "<br>");
+
+    // let uri="https://www.runoob.com/my test.php?name=ståle&car=saab";
+    // let uri_encode = encodeURIComponent(uri);
+    // document.write(uri_encode);
+    // document.write("<br>");
+    // document.write(decodeURIComponent(uri_encode));
+
+    // let uri = "my test.php?name=ståle&car=saab";
+    // document.write(encodeURI(uri) + "<br>");
+    // document.write(decodeURI(uri));
+
+    // var uri="https://www.runoob.com/my test.php?name=ståle&car=saab";
+    // document.write(encodeURIComponent(uri));
+
+    var str="Need tips? Visit RUNOOB!";
+    let str_esc = escape(str);
+    document.write(str_esc + "<br>");
+    document.write(unescape(str_esc));
+  </script>
+</body>
+</html>

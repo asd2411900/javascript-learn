@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <script>
+
+    // let str = "Hello world";
+    // document.getElementById("demo").innerHTML = str.endsWith("world");
+    
+
+    let str = "To be, or not to be, that is the question.";
+    document.getElementById("demo").innerHTML = str.endsWith("question.");
+    document.getElementById("demo1").innerHTML = str.endsWith("to be");
+    document.getElementById("demo2").innerHTML = str.endsWith("to be",19);
+  </script>
+</body>
+</html>

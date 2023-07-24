@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <p id="demo">Visit Microsoft!Visit Microsoft!</p>
+   -->
+   <p id="demo">Mr Blue has a blue house and a blue car.</p>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    function myFunction() {
+      let str = document.getElementById("demo").innerHTML;
+      // let n = str.replaceAll("Microsoft","Runoob");
+
+      let n = str.replaceAll(/blue/ig,"red");
+      document.getElementById("demo").innerHTML=n;
+    }
+
+  </script>
+</body>
+</html>
