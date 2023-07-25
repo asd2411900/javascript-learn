@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <button onclick="removeHandler()">点我</button>
+
+  <script>
+    // document.addEventListener("click",function(){
+    //   document.getElementById("demo").innerHTML = "Hello World!";
+    // })
+
+    // document.addEventListener("click", myFunction);
+    // function myFunction() {
+    //   document.getElementById("demo").innerHTML = "Hello World";
+    // }
+
+    // document.addEventListener("click",myFunction);
+    // document.addEventListener("click",someOtherFunction);
+    // function myFunction() {
+    //   alert ("Hello World!")
+    // };
+    // function someOtherFunction() {
+    //   alert ("该函数同样执行!")
+    // }
+
+    // document.addEventListener("mouseover",myFunction);
+    // document.addEventListener("click",mySecondFunction);
+    // document.addEventListener("mouseout",myThirdFunction);
+    // function myFunction() {
+    //   document.getElementById("demo").innerHTML += "Moused over!<br>"
+    // };
+    // function mySecondFunction() {
+    //   document.getElementById("demo").innerHTML += "Clicked!<br>"
+    // };
+    // function myThirdFunction() {
+    //   document.getElementById("demo").innerHTML += "Moused out!<br>"
+    // }
+
+    // var p1 = 5;
+    // var p2 = 7;
+    // document.addEventListener("click",function(){
+    //   myFunction(p1,p2);
+    // });
+    // function myFunction(a,b) {
+    //   let result = a * b;
+    //   document.getElementById("demo").innerHTML = result
+    // }
+
+    // document.addEventListener("click",function(){
+    //   document.body.style.backgroundColor = "red";
+    // });
+
+    
+    // document.addEventListener("mousemove", myFunction);
+    // function myFunction()  {
+    //   document.getElementById("demo").innerHTML = Math.random();
+    // };
+    // function removeHandler() {
+    //   document.removeEventListener("mousemove",myFunction)
+    // }
+
+    if(document.addEventListener) {
+      document.addEventListener("click",myFunction);
+    }else if (document.attachEvent) {
+      document.attachEvent("onclick",myFunction);
+    }
+    function myFunction() {
+    alert("Hello World!");
+}
+  </script>
+</body>
+</html>
