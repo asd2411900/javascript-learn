@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <embed src="helloworld.swf">
+    <embed src="helloworld.swf">
+    
+    <p>点击按钮显示文档中 embed 元素中的数量。</p>
+    
+    <button onclick="myFunction()">点我</button>
+    
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        let x = document.embeds.length;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击按钮创建button元素</p>
+<button onclick="myFunction()">点我</button>
+
+<script>
+  function myFunction() {
+    // let btn = document.createElement("BUTTON");
+    // document.body.appendChild(btn);
+
+    var btn=document.createElement("BUTTON");
+    let t = document.createTextNode("123");
+    btn.appendChild(t);
+    document.body.appendChild(btn);
+  }
+</script>
+</body>
+</html>

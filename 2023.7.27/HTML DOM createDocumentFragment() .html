@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul><li>Coffee</li><li>Tea</li></ul>
+<p id="demo">单击按钮更改列表项,使用createDocumentFragment方法,然后在列表的最后一个孩子添加列表项。</p>
+<button onclick="myFunction()">点我</button>
+
+<script>
+  function myFunction() {
+    let d = document.createDocumentFragment();
+    d.appendChild(document.getElementsByTagName("LI")[0]);
+    d.childNodes[0].childNodes[0].nodeValue = "Milk";
+    document.getElementsByTagName("UL")[0].appendChild(d);
+  }
+
+//   创建一个文档片段d。
+// 将文档中第一个<li>元素添加到文档片段d中，这里使用document.getElementsByTagName("LI")[0]选择文档中第一个<li>元素。
+// 使用d.childNodes[0].childNodes[0].nodeValue = "Milk"修改文档片段d中第一个子节点（即<li>元素）的第一个子节点（即文本节点）的文本内容为"Milk"。
+// 将文档片段d添加到文档中第一个<ul>元素的末尾，这里使用document.getElementsByTagName("UL")[0]选择文档中第一个<ul>元素。
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <iframe src="//www.runoob.com/html/html-tutorial.html" style="height:380px;width:520px;"></iframe>
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    function myFunction() {
+      let frame = document.getElementsByTagName("IFRAME")[0];
+      let h = frame.contentWindow.document.getElementsByTagName("H1")[0];
+      let x = document.adoptNode(h);
+      document.body.appendChild(x);
+    }
+  </script>
+
+</body>
+</html>

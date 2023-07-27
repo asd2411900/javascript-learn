@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <div class="example">第一 Div 元素 class="example"。</div>
+<div class="example">第二个 Div 元素 class="example"。</div>
+<p>点击按钮修改第一个 Div 元素的文本信息（索引值为 0 的 class="example")。</p>
+<button onclick="myFunction()">点我</button> -->
+
+
+<!-- <div class="example">
+  <p>P 元素在在第一个样式为 class="example" 的 Div 元素中。Div 的索引值为 0。</p>
+</div>
+<div class="example color">
+  <p>P 元素在在第一个样式为 class="example color" 的 Div 元素中。Div 的索引值为 0。</p>
+</div>
+<div class="example color">
+  <p>P 元素在在第二个样式为 class="example color" 的 Div 元素中。Div 的索引值为 1。</p>
+</div>
+<p>点击按钮修改第一个类为 "example" 的 div 元素的背景颜色。</p>
+<button onclick="myFunction()">点我</button> -->
+
+<!-- <div class="example">
+  样式 class="example" 的 div 元素
+  </div>
+  <div class="example">
+  另外一个样式 class="example" 的 div 元素
+  </div>
+  <p class="example">样式 class="example" 的 p 元素</p>
+  <p>点击按钮查看文档中有多少个类名为 "example" 的元素。</p>
+  <button onclick="myFunction()">点我</button>
+  <p><strong>注意:</strong> Internet Explorer 8 及更早 IE 版本不支持 getElementsByClassName() 方法。</p>
+  <p id="demo"></p> -->
+
+  <div class="example">第一 Div 元素 class="example"。</div>
+<div class="example">第二个 Div 元素 class="example"。</div>
+<p>点击按钮修改第一个 Div 元素的文本信息（索引值为 0 的 class="example")。</p>
+<button onclick="myFunction()">点我</button>
+<script>
+  // function myFunction() {
+  //   let x = document.getElementsByClassName("example");
+  //   x[0].innerHTML = "Hello World!"
+  // }
+
+  // function myFunction() {
+  //   let x = document.getElementsByClassName("example color");
+  //   x[0].style.backgroundColor = "red"
+  // }
+
+  // function myFunction() {
+  //   let x = document.getElementsByClassName("example");
+  //   document.getElementById("demo").innerHTML = x.length
+  // }
+
+  function myFunction() {
+    let x = document.getElementsByClassName("example");
+    x[0].innerHTML = "Hello World!";
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function createDoc() {
+      // let doc = document.open("text/html","replace");
+      // let txt = "<!DOCTYPE html><html><body>学习 HTML DOM 很有趣!</body></html>";
+      // doc.write(txt);
+      // doc.close();
+
+      let w = window.open();
+      w.document.open();
+      w.document.write("<h1>Hello World!</h1>");
+      w.document.close();
+    }
+  </script>
+</head>
+<body>
+  <input type="button" value="新文档" onclick="createDoc()">
+</body>
+</html>
