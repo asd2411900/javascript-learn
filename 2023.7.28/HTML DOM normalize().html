@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">点击一个按钮来添加文本,点击另一个按钮规范化文档</p>
+<button onclick="addTextNode()">添加一个文本节点</button>
+<button onclick="normPara()">规范文本</button>
+<p>上面的段落有 <span id="cc">1</span>个子节点。</p>
+<script>
+  function addTextNode() {
+    let y = document.createTextNode("Click again");
+    let x = document.getElementById("demo");
+    x.appendChild(y);
+    let z  = document.getElementById("cc");
+    // z.innerHTML=x.childNodes.length;
+    z.innerHTML=x.childNodes.length;  }
+
+  function normPara() {
+    document.normalize();
+    let x = document.getElementById("demo");
+    let z = document.getElementById("cc");
+    z.innerHTML = x.childNodes.length;
+  }
+
+  
+</script>
+</body>
+</html>

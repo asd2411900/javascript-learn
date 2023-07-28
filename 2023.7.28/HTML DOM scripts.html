@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    document.write("Hello Runoob!");
+  </script>
+  <button onclick="myFunction()">点我</button>
+  <p id="demo"></p>
+
+  <script id="runoob">
+    function myFunction() {
+      // let x = document.scripts.length;
+      // document.getElementById("demo").innerHTML = "找到 " + x + " 个 script 元素。";
+
+      // let x = document.scripts[0].text;
+      // document.getElementById("demo").innerHTML = x;
+
+      // let x = document.scripts.item(0).text;
+      // document.getElementById("demo").innerHTML = x;
+
+      function myFunction() {
+        var x = document.scripts.namedItem("runoob").text;
+    document.getElementById("demo").innerHTML = x;
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <button id="myBtn">点我</button>
+  <p id="demo"></p> -->
+
+  <button id="myBtn">点我</button>
+  <script>
+    // document.getElementById("myBtn").addEventListener("click",function(){
+    //   document.getElementById("demo").innerHTML = "Hello World"
+    // })
+
+    // let x = document.getElementById("myBtn");
+    // x.addEventListener("click",myFunction);
+    // x.addEventListener("click",someOtherFunction);
+    // function myFunction() {
+    //   alert("Hello World!")
+    // };
+    // function someOtherFunction() {
+    //   alert("该函数也将被执行!")
+    // }
+
+    let x = document.getElementById("myBtn");
+x.addEventListener("mouseover", myFunction);
+x.addEventListener("click", mySecondFunction);
+x.addEventListener("mouseout", myThirdFunction);
+    function  myFunction() {
+      // document.getElementById("demo").innerHTML += "鼠标经过!<br>"
+      document.getElementById("demo").innerHTML += "鼠标经过!<br>"
+    }
+    function mySecondFunction() {
+      // document.getElementById("demo").innerHTML += "点击!<br>"
+      document.getElementById("demo").innerHTML += "点击!<br>"
+    }
+    function myThirdFunction()  {
+      // document.getElementById("demo").innerHTML += "鼠标离开!<br>"
+      document.getElementById("demo").innerHTML += "鼠标离开!<br>"
+    }
+  </script>
+</body>
+</html>

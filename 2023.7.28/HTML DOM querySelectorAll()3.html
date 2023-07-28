@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>一个 h1 元素</h1>
+
+<div>一个 div 元素</div>
+
+<p>一个 p 元素。</p>
+
+<p>另一个 p 元素。</p>
+
+<div class="example">
+  <p>在 div 中的一个 p 元素。</p>
+</div>
+
+<p>点击按钮修改文档中所有 p 元素的背景颜色。</p>
+
+<button onclick="myFunction()">点我</button>
+
+<script>
+  function myFunction() {
+    let x = document.querySelectorAll("p");
+    let i;
+    for(i=0; i < x.length; i++) {
+      x[i].style.backgroundColor = "red";
+    }
+  }
+</script>
+</body>
+</html>

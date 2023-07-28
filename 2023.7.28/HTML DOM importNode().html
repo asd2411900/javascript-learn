@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="myFunction()">点我</button>
+<p id="demo">点击上面的按钮以获取和显示在iframe第一个H1元素的值:</p>
+
+<script>
+
+  function myFunction() {
+    // let frame = document.getElementsByTagName("iframe")[0];
+    // let h = frame.contentWindow.document.getElementsByTagName("h1")[0];
+    // let x = document.importNode(h,true);
+    // document.getElementById("demo").appendChild(x);
+
+    var frame=document.getElementsByTagName("iframe")[0]
+	var h=frame.contentWindow.document.getElementsByTagName("h1")[0];
+	var x=document.importNode(h,true);
+  // importNode() 是 JavaScript 中一个用于从一个文档中导入节点到当前文档中的方法。
+	document.getElementById("demo").appendChild(x);
+  }
+</script>
+<iframe src="http://www.w3cschool.cc" style="height:280px;width:420px;"></iframe>
+</body>
+</html>

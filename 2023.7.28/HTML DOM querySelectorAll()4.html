@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a href="https://www.runoob.com">菜鸟教程</a>
+<a href="https://www.google.com" target="_blank">Google</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+<p>点击按钮为所有包含 target 属性的 a 标签设置边框。</p>
+
+<button onclick="myFunction()">点我</button>
+
+<script>
+  function myFunction() {
+    let x = document.querySelectorAll("a[target]");
+    let i;
+    for(i=0;i<x.length;i++) {
+      x[i].style.border = "10px solid red";
+    }
+  }
+</script>
+</body>
+</html>

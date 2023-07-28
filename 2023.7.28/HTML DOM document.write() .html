@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>write() 方法</h2>
+
+<p>点击以下按钮，打开新窗口：</p>
+
+<button onclick="myFunction()">点我</button>
+  <script>
+    // document.write("123");
+    // document.write("<h1>Hello World!</h1><p>Have a nice day!</p>");
+
+    function myFunction() {
+      const myWindom = window.open();
+      myWindom.document.write("<h1>这是一个新窗口</h1>");
+      myWindom.document.write("<p>Hello World!</p>")
+    }
+  </script>
+</body>
+</html>

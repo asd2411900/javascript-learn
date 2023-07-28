@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      border: 1px solid black;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h3>H3 元素</h3>
+    <p>我是一个 p 元素，我的父元素是 div 元素。</p>
+  </div>
+  
+  <div>
+    <h3>H3 元素</h3>
+    <p>我是一个 p 元素，我的父元素也是 div 元素。</p>
+  </div>
+  
+  <p>点击按钮修改父元素为 div 的所有 p 元素的背景颜色。</p>
+  
+  <button onclick="myFunction()">点我</button>
+
+  <script>
+    function myFunction() {
+      let x = document.querySelectorAll("div > p");
+      let i;
+      for(i=0;i<x.length;i++) {
+        x[i].style.backgroundColor = "red"
+      }
+    }
+  </script>
+</body>
+</html>
